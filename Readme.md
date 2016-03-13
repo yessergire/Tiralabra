@@ -1,25 +1,38 @@
-## Kommentteja vasta lauantaina! 
-ryhmäteknisistä syistä
+#Kayttoohje
+
+Ohjelmaa voidaan käynnistää komennolla ```java -jar Tiralabra_maven-1.0-SNAPSHOT.jar``` tai tupla klikkaamalla jar-tiedostoa. Ohjelmassa komennot: ovat open, new maze, findPath ja exit.
+
+![Alt Kuva sovelluksen komennoista](Docs/gui1.png)
+
+Kuva sovelluksen komennoista
+
+ - ```open``` avaa sokkeloa sisältävän tiedoston.
+ - ```save``` tallentaa sokkelon tiedostoon.
+ - ```new``` maze piirtää satunnaisesti generoidun sokkelon.
+ - ```findPath``` piirtää lähtöruudusta maaliruutuun vievän reitin, jos sellaista löytyy.
+ - ```exit``` sulkee sovelluksen.
+
+![Alt Kuva tiedoston sokkelosta](Docs/gui6.png)
+
+Ohjelman hyväksymä tekstitiedosto on muotoa:
+
+```
+S # # # # # # # # #
+1 2 3 4 5 6 7 8 9 #
+# # # 4 5 6 # # # #
+1 9 7 6 8 6 # 8 # #
+5 2 3 4 5 # 7 8 # #
+1 7 3 8 3 6 5 8 4 #
+8 2 3 4 # # # # 5 G
+
+```
+
+```S``` merkitsee lähtöruutua, ```#``` estettä ja ```G``` maaliruutua.
+Ruudut on eroteltu toisistaan välilyönnein. Ruutuun on kirjoitettu sen paino.
+
+![Alt Kuva satunnaisesta sokkelosta](Docs/gui2.png)
+Kuva satunnaisesta sokkelosta.
 
 
-
-
-Tämä on tehtäväpohja, jonka forkkasit Tietorakenteiden harjoitustyön suorittamista varten.
-
-Pohja tukee valmiiksi ant ja maven pohjaisia java-projekteja.
-Ant on tuttu ohjelmoinnen perusteista ja jatkokurssilta, mutta maven on suositellumpi ja laajemmin käytetty heti kun projekti alkaa olla isompi.
-
-* * *
-
-Muokkaa tiedostoa run_tests.sh tehtäväpohjan ohjeiden mukaisesti, mikäli et käytä tehtäväpohjien mukana tulevaa pohjaa.
-
-Kuitenkin on tärkeää poistaa turha kansio!
-* Ant:ia käyttäessäsi poista kansio Tiralabra_maven
-* Mavenia käyttäessäsi poista kansio Tiralabra
-
-Pull requestien yhteydessä ohjelman testit ajetaan Travis-ci:ssä, ja sen vuoksi on tärkeää, että run_tests.sh sisältää projektikansiosi nimen oikein!
-
-Docs kansioon tulee laittaa kaikki muut dokumentit, paitsi javadoc, joka voi olla projektikansiossasi.
-
-Viikottainen "palautus" tehdään luomalla Pull Request forkattuun repoon.
-
+![Alt Kuva satunnaisesta sokkelosta ratkaistuna](Docs/gui4.png)
+Kuva satunnaisesta sokkelosta ratkaistuna.
